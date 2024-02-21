@@ -3,7 +3,7 @@ import time
 
 import pytest
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
+# from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -11,7 +11,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from config.definitions import ROOT_DIR
 
 @pytest.fixture
-def browser():
+def browser(scope='module'):
     driver = webdriver.Chrome()
     driver.maximize_window()
     yield driver
