@@ -36,7 +36,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Python tests.Python tests for store_tests.test_page_titles_are_correct.executor": "Debug",
+    "Python tests.Python tests for store_tests.test_can_add_and_remove_favorites.executor": "Run",
+    "Python tests.Python tests for store_tests.test_css_selectors.executor": "Run",
+    "Python tests.Python tests for store_tests.test_page_titles_are_correct.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -54,7 +56,7 @@
       </console-settings>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for store_tests.test_page_titles_are_correct">
+  <component name="RunManager" selected="Python tests.Python tests for store_tests.test_css_selectors">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Selenium4WebdriverAutomation" />
       <option name="ENV_FILES" value="" />
@@ -77,6 +79,36 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for store_tests.test_can_add_and_remove_favorites" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Selenium4WebdriverAutomation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;store_tests.test_can_add_and_remove_favorites&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for store_tests.test_css_selectors" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Selenium4WebdriverAutomation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;store_tests.test_css_selectors&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for store_tests.test_page_titles_are_correct" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Selenium4WebdriverAutomation" />
       <option name="ENV_FILES" value="" />
@@ -94,6 +126,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for store_tests.test_css_selectors" />
+        <item itemvalue="Python tests.Python tests for store_tests.test_can_add_and_remove_favorites" />
         <item itemvalue="Python tests.Python tests for store_tests.test_page_titles_are_correct" />
       </list>
     </recent_temporary>
@@ -117,11 +151,49 @@
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
