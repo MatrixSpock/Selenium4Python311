@@ -11,6 +11,20 @@ from selenium.webdriver.support import expected_conditions as EC
 
 from config.definitions import ROOT_DIR
 
+
+def test_xpath_comparison_button(browser, root_url):
+    browser.get(root_url)
+
+    cmp_button = browser.find_element(By.XPATH, "//*[@id='root']/section[1]/div[3]/div[2]/button[2]")
+    assert cmp_button.text == 'Comparison'
+
+    cmp_button = browser.find_element(By.XPATH, "/html/body/div/section[1]/div[3]/div[2]/button[2]")
+    assert cmp_button.text == 'Comparison'
+
+    cmp_button = browser.find_element(By.XPATH, "(//button[text()='Comparison']//ancestor::div[1]//child::button)[2]")
+    assert cmp_button.text == 'Comparison'
+
+
 def test_css_selectors(browser, root_url):
     browser.get(root_url)
 
@@ -25,6 +39,7 @@ def test_css_selectors(browser, root_url):
     lst = [el1, el2, el3, el4, el5, el6]
 
     assert all(el is not None for el in lst)
+
 
 def test_can_add_and_remove_favorites(browser, root_url):
     browser.get(root_url)
@@ -52,6 +67,7 @@ def test_can_add_and_remove_favorites(browser, root_url):
     with pytest.raises(NoSuchElementException):
         browser.find_element(By.ID, 'product1')
 
+
 @pytest.fixture
 def browser(scope='module'):
     driver = webdriver.Chrome()
@@ -59,9 +75,11 @@ def browser(scope='module'):
     yield driver
     driver.quit()
 
+
 @pytest.fixture
 def root_url():
     return os.path.join(ROOT_DIR, 'store', 'index.html')
+
 
 def test_page_titles_are_correct(browser, root_url):
     # service = Service(executable_path="C:\\webdrivers\\chromedriver.exe")
